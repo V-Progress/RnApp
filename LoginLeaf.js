@@ -53,8 +53,15 @@ export default class LoginLeaf extends Component {
                     确定
                 </Text>
                 <Text
-                    style={styles.bigTextPrompt}
+                    style={styles.bigPrompt}
                     onPress={() => this.userPressAddressBook()}>通讯录</Text>
+                <View style={{justifyContent:'space-between',alignItems:'center',flexDirection: 'row',flexWrap: 'nowrap',width:400,height:300}}>
+                    <Text style={{borderWidth: 2,borderColor:'#FF0000',width: 50, height: 50, backgroundColor: '#000000',color:'#FFFFFF'}}>111</Text>
+                    <Text style={{width: 50, elevation: 50,height: 50, backgroundColor: '#000000',color: '#FFFFFF'}}>222</Text>
+                    <Text style={{width: 50, height: 50, backgroundColor: '#000000',color: '#FFFFFF'}}>333</Text>
+                    <Text style={{width: 50, height: 50, backgroundColor: '#000000',color: '#FFFFFF'}}>444</Text>
+                    <Text style={{width: 50, height: 50, backgroundColor: '#000000',color: '#FFFFFF'}}>555</Text>
+                </View>
             </View>
         );
     }
@@ -114,6 +121,14 @@ const styles = StyleSheet.create({
         height: 60
     },
     bigTextPrompt: {
+        position: 'relative',
+        margin: widthOfMargin,
+        backgroundColor: 'gray',
+        color: 'white',
+        textAlign: 'center',
+        fontSize: 30
+    },
+    bigPrompt: {
         margin: widthOfMargin,
         backgroundColor: 'gray',
         color: 'white',
